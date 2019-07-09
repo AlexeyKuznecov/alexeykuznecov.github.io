@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Тантал-строй</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/modal/style.css">
+</head>
+<body>
+	<section id="hero" class="hero">
+		<div class="container">
+			<div class="row pages">
+				<a href="#" class="pages-item">Главная</a>
+				<a href="#" class="pages-item">Наши проекты</a>
+				<a href="#" class="pages-item">Дома</a>
+			</div>
+			<div class="product">
+				<div class="row">
+					<h3 class="product-title">Проект 1</h3>
+				</div>
+				<div class="row product-wrap p-0">
+					<div class="col-xl-7 col-lg-6 p-md-0">
+						<div class="product-img">
+							<img src="img/card1.png" alt="Проект 1" class="img-responsive">
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-6 product-right">
+						<div class="product-digits">
+							<span class="product-square">172 м²</span>
+							<div class="product-price">
+								<span class="product-price__current">1 450 000 ₽ </span>
+								<span class="product-price__nodiscont">Цена без скидки: 
+									<span class="product-price__cross-out">1 950 000 ₽</span>
+								</span>
+							</div>
+						</div>
+						<p class="product-description">
+							Описание конкретного проекта, его характеристики, которые помогут пользователю определиться с выбором.<br>
+							Дом из оцилиндрованного бревна ф240мм  V бревна=109,24м.кв.<br>
+							S общая дома=172,43 м.кв.
+							Из них:
+							1 этаж=92,98 м.кв.
+							2 этаж= 79,45 м.кв. Дом из оцилиндрованного бревна ф240мм  V бревна=109,24м.кв.
+						</p>
+						<div class="product-buttons">
+							<a href="#" class="product-btn product-buttons__calc" data-toggle="modal" data-target="#modal-calc">Заказать расчёт стоимости</a>
+							<a href="#" class="product-btn product-buttons__question" data-toggle="modal" data-target="#modal-question">Задать вопрос</a>
+							<!-- ОБРАТНЫЙ ЗВОНОК ССЫЛКУ УДАЛИТЬ. Код только модального с id="modal-call" -->
+							<a href="#" class="product-btn product-buttons__question" data-toggle="modal" data-target="#modal-call">Обратный звонок</a>
+						</div>
+						<div class="product-links">
+							<span class="product-share">Поделиться ссылкой: </span>
+							<a href="#">
+								<i class="product-icon icon-instagram"></i>
+							</a>
+							<a href="#">
+								<i class="product-icon icon-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="product-icon icon-twitter"></i>
+							</a>
+							<a href="#">
+								<i class="product-icon icon-vkontakte"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="modal fade" id="modal-calc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<i class="icon-phone"></i>
+					<h5 class="modal-title">Рассчитать стоимость строительства</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img src="img/cancel.png" alt="Закрыть" aria-hidden="true">
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="form row">
+						<div class="col-md-6 form-left">
+							<div class="form-group">
+								<label for="form-label-stage" class="form-label">Этажность дома:</label>
+								<input type="hidden" id="select-stage" name="stage" value="Одноэтажный">
+								<div class="select form__select">
+									<div class="select_checked">Одноэтажный</div>
+									<ul class="select__dropdown">
+										<li class="select__option" data-value="Одноэтажный">Одноэтажный</li>
+										<li class="select__option" data-value="Двухэтажный">Двухэтажный</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="form-label-square" class="form-label">Общая площадь дома:</label>
+								<input type="hidden" name="square" value="До 50 м.кв">
+								<div class="select form__select">
+									<div class="select_checked">До 50 м.кв</div>
+									<ul class="select__dropdown">
+										<li class="select__option" data-value="До 50 м.кв">До 50 м.кв</li>
+										<li class="select__option" data-value="До 100 м.кв">До 100 м.кв</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="form-label-place" class="form-label">Место строительства (населённый пункт, область):</label>
+								<input type="text" id="form-label-place" class="form-label-place">
+							</div>
+						</div>
+						<div class="col-md-6 form-right">
+							<div class="form-group">
+								<label for="form-label-name" class="form-label form-label-name">Ваше имя <span class="form-red">*</span></label>
+								<input type="text" id="form-label-name" name="name" autocomplete="off" required minlength="2">
+							</div>
+							<div class="form-group">
+								<label for="form-label-phone" class="form-label form-label-phone">Телефон <span class="form-red">*</span></label>
+								<input type="tel" id="form-label-phone" name="phone" autocomplete="off" required>
+							</div>
+							<div class="form-group">
+								<label for="form-label-mail" class="form-label form-label-mail">E-mail:</label>
+								<input type="email" id="form-label-mail" name="mail" autocomplete="off">
+							</div>
+						</div>
+						<div class="form-bottom">
+							<div class="form-bottom_left col-md-6">
+								<div class="form-personal">
+									<input required type="checkbox" class="form-personal-checkbox" id="form-personal-check">
+									<label class="form-personal-label" for="form-personal-check">Я согласен на 
+										<span>
+											<a href="#">обработку персональных данных</a>
+										</span>
+									</label>
+								</div>
+								<div class="form-required">
+									<span>*</span>
+									Обязательные поля
+								</div>
+							</div>
+							<div class="form-bottom_right col-md-6">
+								<div class="form-group">
+									<label for="form-label-message" class="form-label form-label-message">Сообщение:</label>
+									<textarea name="form-message" id="form-label-message" cols="30" rows="10"></textarea>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="modal-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-question fade" id="modal-question" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog_question modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<i class="icon-phone"></i>
+					<div class="modal-header-text">
+						<h5 class="modal-title">Задать вопрос</h5>
+						<p class="modal-description">Мы с радостью ответим на ваши вопросы и произведём расчёт стоимости услуг</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img src="img/cancel.png" alt="Закрыть" aria-hidden="true">
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="form form-question row">
+							<div class="form-group">
+								<label for="form-question-label-name" class="form-label form-label-name">Ваше имя <span class="form-red">*</span></label>
+								<input type="text" id="form-question-label-name" name="name" autocomplete="off" required minlength="2">
+							</div>
+							<div class="form-group">
+								<label for="form-question-label-phone" class="form-label form-label-phone">Телефон <span class="form-red">*</span></label>
+								<input type="tel" id="form-question-label-phone" name="phone" autocomplete="off" required>
+							</div>
+							<div class="form-group">
+								<label for="form-question-label-mail" class="form-label form-label-mail">E-mail:</label>
+								<input type="email" id="form-question-label-mail" name="mail" autocomplete="off">
+							</div>
+							<div class="form-group">
+								<label for="form-question-label-product" class="form-label">Интересующий товар/услуга:</label>
+								<input type="hidden" id="form-question-label-product" name="product" value="Проект 4">
+								<div class="select form__select">
+									<div class="select_checked">Проект 4</div>
+									<ul class="select__dropdown">
+										<li class="select__option" data-value="Проект 4">Проект 4</li>
+										<li class="select__option" data-value="Проект 5">Проект 5</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="form-question-label-message" class="form-label form-label-message">Сообщение:</label>
+								<textarea name="form-message" id="form-question-label-message" cols="30" rows="10"></textarea>
+							</div>
+							<div class="form-personal">
+								<input required type="checkbox" class="form-personal-checkbox" id="form-question-personal-check">
+								<label class="form-personal-label" for="form-question-personal-check">Я согласен на 
+									<span>
+										<a href="#">обработку персональных данных</a>
+									</span>
+								</label>
+							</div>
+						<button type="submit" class="modal-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-question modal-call fade" id="modal-call" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog_question modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<i class="icon-phone"></i>
+					<div class="modal-header-text">
+						<h5 class="modal-title">Обратный звонок</h5>
+						<p class="modal-description">Представьтесь, мы вам перезвоним</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img src="img/cancel.png" alt="Закрыть" aria-hidden="true">
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="form form-question row">
+							<div class="form-group">
+								<label for="form-question-label-name" class="form-label form-label-name">Ваше имя <span class="form-red">*</span></label>
+								<input type="text" id="form-question-label-name" name="name" autocomplete="off" required minlength="2">
+							</div>
+							<div class="form-group">
+								<label for="form-question-label-phone" class="form-label form-label-phone">Телефон <span class="form-red">*</span></label>
+								<input type="tel" id="form-question-label-phone" name="phone" autocomplete="off" required>
+							</div>
+							<div class="form-personal">
+								<input required type="checkbox" class="form-personal-checkbox" id="form-call-personal-check">
+								<label class="form-personal-label" for="form-call-personal-check">Я согласен на 
+									<span>
+										<a href="#">обработку персональных данных</a>
+									</span>
+								</label>
+							</div>
+						<button type="submit" class="modal-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Мастер на час в Иванове, от 250 рублей в час, бонусы моим клиентам">
+	<title>Мастер на час в Иванове</title>
+	<meta name="keywords" content="Мастер на час, Мастер на час Иваново, Мастер на час в Иванове, Муж на час в иваново, Потек кран, Отклеились обои, Разбился стеклопакет, Засорился унитаз">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="lightzoom/style.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg row">
+				<div class="col-lg-3 col-sm-4 col-2 d-flex pr-0 pl-0 brand-col align-items-center">
+					<a class="navbar-brand" href="#header-for-logo" data-target="anchor">
+					</a>
+					<p class="navbar-text text-uppercase">
+						Ваш<br>
+						Мастер на все руки
+					</p>
+				</div>
+				<button type="button" class="navbar-toggler menu-link" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse col-lg-6 col-sm-12 p-0" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#header-info" data-target="anchor">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#prices" data-target="anchor">Услуги и Цены</a>
+						</li>
+						<li class="nav-item item-works">
+							<a class="nav-link" href="#my-works" data-target="anchor">Мои работы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#map" data-target="anchor">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hot-line d-flex justify-content-lg-end justify-content-sm-start align-items-center pr-0 pl-0 ml-lg-auto mr-lg-0 col-lg-3 col-sm-5 col-7 mr-sm-auto offset-sm-1 offset-lg-0 m-auto justify-content-center">
+					<a href="tel:+79806811801" class="cell-phone">
+						<i class="fas fa-phone fa-flip-horizontal"></i>
+					</a>
+					<div class="request-call">
+						<a href="tel:+79806811801" class="call-from-site">+7 980 681 18 01</a>
+						<a class ="request" href="#" data-toggle="modal" data-target="#exampleModal">
+							Заказать звонок
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header row text-center">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="col-12 modal-title" id="exampleModalLabel">Закажите звонок</h5>
+					<p class="col-12">Заполните форму и мы перезвоним</p>
+				</div>
+				<div class="modal-body">
+					<div class="row row justify-content-center">
+						<form action="send.php" method="post" class="valid-form form-inline p-0 justify-content-center">
+							<div class="form-item p-0  col-10">
+								<input id="modalInputName" type="text" name="name" class="form-control" placeholder="Ваше имя" minlength="2" autocomplete="off">
+							</div>
+							<div class="form-item p-0  col-10">
+								<input type="tel" name="phone" class="form-control" placeholder="Ваш телефон" data-mask="+7(999)/999/9999" data-mask-reverse="true" class="input-phone" id="modalInputPhone" autocomplete="off" minlength="13">
+							</div>
+							<div class="form-item p-0  col-10">
+								<button type="submit" class="btn btn-primary btn-apply" data-toggle="modal" data-target="#exampleModal" disabled>ПОДАТЬ ЗАЯВКУ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="header-info" class="header-info">
+		<div id="header-for-logo" class="header-info-opacity">
+			<div class="container">
+					<h1 class="text-center text-uppercase">Мастер на час в Иванове</h1>
+				<div class="row justify-content-center	">
+					<div class="col-sm-6 col-8 text-center info-price p-0">
+						От   250   рублей в час.
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-11 call-me text-center">
+						Позвоните мне и опишите свою проблем . Сделав это, вы уже решите ее на 95 %.
+						Оставьте заявку на бесплатный расчет.
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<form id="headerForm" method="post" action="send.php" class="valid-form form-inline col-lg-10 col-10 justify-content-around p-0">
+						<div class="form-item p-0">
+							<input type="text" name="name" class="form-control" id="inputName" placeholder="Ваше имя" minlength="2" autocomplete="off">
+						</div>
+						<div class="form-item p-0">
+							<input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Ваш телефон" minlength="13" autocomplete="off">
+						</div>
+						<div class="form-item p-0">
+							<button type="submit" class="btn btn-primary btn-apply">ПОДАТЬ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+				<div class="row justify-content-center">
+					<div class="rolling-down">
+						<a href="#introduce" data-target="anchor"><i class="fas fa-angle-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="introduce" class="introduce">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="introduce-img d-lg-block d-md-none">
+						<img src="img/introduce-cut3.png" alt="introduce" class="d-md-block d-none">
+					</div>
+				</div>
+				<div class="col-md-6 introduce-info">
+					<h3 class="text-md-left text-center">Меня зовут Сергей Миронов.</h3> 
+					<p>Я инженер-электрик по профессии с многолетним стажем. Я занимаюсь мелким ремонтом по дому и ремонтом квартир в качестве мастера, выезжающего на дом, в Иванове.</p>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Потек кран?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Отклеились обои?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Перестал работать светильник?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/check.png" alt="check">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Разбился стеклопакет в окне?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Барахлит отопление?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Плохо закреплен плинтус?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Засорился унитаз?
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-1 col-2 crosses">
+							<img src="img/cross.png" alt="cross">
+						</div>
+						<div class="col-md-10 col-sm-11 col-10">
+							<p>
+								Любая другая бытовая неприятность
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="apply" class="apply">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mr-auto">
+					<div class="row justify-content-center">
+						<div class="col-md-9">
+							<button type="submit" class="btn btn-primary btn-apply" data-toggle="modal" data-target="#exampleModal">ПОДАТЬ ЗАЯВКУ</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12 right-apply">
+					<p class="text-center text-md-right">
+						Тогда вам достаточно позвонить мне и описать проблему.<br class="apply-br"> Сделав это, вы уже решите ее на 95 %.
+					</p>
+					<img src="img/apply-there.png" alt="apply-there" class="d-md-block d-none">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="benefits" class="benefits">
+		<div class="container">
+			<h4>Ваши преимущества</h4>
+			<div class="row first-line">
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/decision.png" alt="decision">
+					</div>
+					<p class="benefits-strong"><strong>Решение вашей проблемы</strong></p>
+					<p>Вы можете быть уверены, что я решу вашу задачу. Я накопил огромный опыт решения проблем подобного рода, став мастером на все руки</p>
+				</div>
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/diligence.png" alt="diligence">
+					</div>
+					<p class="benefits-strong"><strong>Исполнительность</strong></p>
+					<p>В моем лице вы получаете надежного исполнителя. Я довожу начатое до конца и не отступаю перед сложными задачами.</p>
+				</div>
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/responsibility.png" alt="responsibility">
+					</div>
+					<p class="benefits-strong"><strong>Ответственность</strong></p>
+					<p>Вы получите максимально возможное качество, потому что иначе я просто не умею.</p>
+				</div>
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/confidence.png" alt="confidence">
+					</div>
+					<p class="benefits-strong"><strong>Уверенность в цене</strong></p>
+					<p>Я всегда заранее называю предварительную цену. Вы платите по завершении работы, только если вас все устроило.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/delivery.png" alt="delivery">
+					</div>
+					<p class="benefits-strong"><strong>Доставка материалов</strong></p>
+					<p>Я сам съезжу за материалами и не буду напрягать вас вопросами, в которых вы ничего не смыслите.</p>
+				</div>
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/assessment.png" alt="assesmdent">
+					</div>
+					<p class="benefits-strong"><strong>Бесплатная оценка</strong></p>
+					<p>Я приеду к вам для оценки фронта работ бесплатно (кроме срочных выездов).</p>
+				</div>
+				<div class="col-md-3 benefits-item">
+					<div class="benefits-img">
+						<img src="img/warranty.png" alt="warranty">
+					</div>
+					<p class="benefits-strong"><strong>Гарантия</strong></p>
+					<p>Я даю 12-месячную гарантию на свои работы.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="consultation" class="consultation">
+		<div class="consultation-opacity">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-10">
+						<h2>Получите бесплатную консультацию
+						по решению вашей проблемы.</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p>Часто достаточно моей консультации, чтобы клиент самостоятельно решил проблему.<br class="cons-br">Поэтому начните с обращения ко мне  и, возможно, вы обойдетесь без привлечения мастера.</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<form id="consultationForm" method="post" action="send.php" class="valid-form form-inline col-lg-10 col-10 justify-content-around p-0">
+						<div class="form-item p-0">
+							<input type="text" name="name" class="form-control" id="consName" placeholder="Ваше имя" minlength="2" autocomplete="off">
+						</div>
+						<div class="form-item p-0">
+							<input type="tel" name="phone" class="form-control" id="consPhone" placeholder="Ваш телефон" minlength="13" autocomplete="off">
+						</div>
+						<div class="form-item p-0">
+							<button type="submit" class="btn btn-primary btn-apply">ПОДАТЬ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="my-works" class="my-works">
+		<div class="container">
+			<h5 class="text-center">
+				Мои работы
+			</h5>
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/house1.png" class="img-fluid" alt="house1">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/house1-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>3 дома, построенных мною лично или с моим значительным участием. В которых теперь живут новые владельцы.
+					</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/sec-work.png" class="img-fluid" alt="sec-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/sec-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Изготовление и установка кронштейна для подвешивания велосипеда на стену.
+					</p>
+				</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/third-work.png" class="img-fluid" alt="third-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/third-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Установка защиты от воздействия влаги на выступ из кирпича на доме.
+					</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/fourth-work.png" class="img-fluid" alt="fourth-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/fourth-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Организация системы отопления в коттедже.
+					</p>
+				</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/fifth-work.png" class="img-fluid" alt="fifth-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/fifth-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Демонтаж части железобетонного перекрытия для доступа в подвал.
+					</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/six-work.png" class="img-fluid" alt="six-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/six-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Монтаж входной двери.
+					</p>
+				</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/seven-work.png" class="img-fluid" alt="seven-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/seven-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Организация водоснабжения от колодца.
+					</p>
+				</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 text-center">
+					<div class="">
+					<div class="work-img">
+						<img src="img/eight-work.png" class="img-fluid" alt="eight-work">
+						<i class="fas fa-search-plus"></i>
+						<a href="img/eight-work-big.jpg" class="lightzoom"></a>
+					</div>
+					<p>Переделка системы отопления в коттедже-установлены насосы.
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="prices" class="prices">
+		<div class="prices-opacity">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-10 text-center">
+						<h5>Мои специализации<br>
+						(в простонародье «муж на час» в Иванове, «мастер на час»)</h5>
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						01
+					</div>
+					<div class="col-7 service">
+						Мелкий ремонт квартир
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						02
+					</div>
+					<div class="col-7 service">
+						Отопление
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						03
+					</div>
+					<div class="col-7 service">
+						Электрика
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						04
+					</div>
+					<div class="col-7 service">
+						Услуги сантехника
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						05
+					</div>
+					<div class="col-7 service">
+						Чистка засоров (канализация)
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+				<div class="row prices-item align-items-center">
+					<div class="d-none d-sm-block col-1 number-item">
+						06
+					</div>
+					<div class="col-7 service">
+						Ремонт некоторой стационарной бытовой техники
+					</div>
+					<div class="col-sm-4 col-5 hour-price">
+						от 250 рублей за час
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="video-reviews">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col text-center">
+					<h5>Видеоотзывы</h5>
+				</div>
+			</div>
+			<div class="row justify-content-center video-row">
+				<div class="col-md-4 col-sm-6 col-6  mb-2">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZTYkF-f0jWY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-6 mb-2">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/818EULz-plM" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center pl-15 pr-15">
+				<div class="col-12 text-center others-videos">
+					<a href="https://youtube.com/channel/UCGm23rkFxzrgqqkhzYo3llg" class="btn btn-primary btn-videos" target="_blank">Другие видео</a>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<section id="map" class="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1e4b83d8d74f7f4177afbd46fb2b54b10b36bd5fc25e1674780fb5acdf6db31&amp;source=constructor" width="100%" height="450" id="yamap"></iframe>
+		
+		<div class="social-links col-sm-4 offset-sm-1 my-sm-auto">
+			<div class="row">
+				<div class="col-sm-10 offset-sm-2 p-sm-0">
+					<div class="social-contacts d-flex d-sm-block justify-content-between align-content-center align-items-center">
+						<h4>контакты</h4>
+						<p>Иваново</p>
+						<p class="phone-mail">
+							<a href="tel:+79806811801">+7 980 681 18 01</a><br>
+							<a href="mailto:sergey.mironov@velior.ru" class="mail-contact">sergey.mironov@velior.ru</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-6 vk d-flex p-0">
+					<a href="https://vk.com/id503891248" target="blank">
+						<i class="fab fa-vk"></i>
+					</a>
+				</div>
+				<div class="col-6 youtube d-flex p-0">
+					<a href="https://youtube.com/channel/UCGm23rkFxzrgqqkhzYo3llg" target="blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<footer id="bonus" class="bonus">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-sm-12 bonus-text pr-md-0">
+					<h2>
+						Бонус моим клиентам:
+					</h2>
+					<p>
+						Если вы мой клиент, у вас есть автомобиль и возникла с ним проблема, я вас бесплатно проконсультирую по этой проблеме.<br class="d-sm-none d-block">(Опыт ремонта автомобилей — более 40 лет.)
+					</p>
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-primary q-btn" data-toggle="modal" data-target="#exampleModal">ЗАДАТЬ ВОПРОС</button>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-5 d-flex align-items-center text-center bonus-img">
+					<img src="img/bonus.png" alt="bonus-img" class="img-fluid d-none d-md-block">
+					<img src="img/bonus-min.png" alt="bonus-img" class="img-fluid d-block d-md-none">
+				</div>
+			</div>
+		</div>
+	</footer> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="lightzoom/lightzoom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		if ($(window).width() > 768) { 
+			jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});
+		}
+		$(function() {
+			$('input[name="phone"]').mask("+7 (999) 999-99-99", {autoclear: false});
+			$('input[name="phone"]').keypress(function(e) {
+				if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
+					return false;
+				}
+			});
+			$('input[name="name"]').keypress(function(e) {
+				if (e.which != 46 && e.which > 47 && e.which < 58) {
+					return false;
+				}
+			});
+		});
+		$.validator.addMethod("minlenghtphone", function (value, element) {
+			return value.replace(/\D+/g, '').length > 10;
+		},
+		"Необходимо заполнить поле полностью");
+		$.validator.addMethod("requiredphone", function (value, element) {
+			return value.replace(/\D+/g, '').length > 0;
+		},
+		"Поле должно быть заполнено");
+
+		function checkClass(){
+			if ($('#modalInputPhone').hasClass('success-input') && $('#modalInputName').hasClass('success-input')) {
+				$(".modal .btn").removeAttr('disabled');
+			};	
+		}
+		$(function() {
+			$('#modalInputPhone, #modalInputName').on('change', function() {
+				checkClass();
+			});
+		});
+		
+			$(".valid-form").each(function() {
+				let $form = $(this);
+				$form.validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						phone: {
+							required: true,
+							minlenght: true
+						}
+					},
+					messages: {
+						name: {
+							required: 'Поле должно быть заполнено',
+							minlength: 'Длина имени должна быть не менее {0} символов'
+						},
+						phone: {
+							required: 'Поле должно быть заполнено',
+							minlength: 'Поле должно быть заполнено'
+						}
+					},
+					errorClass: 'invalid-input',
+					validClass: "success-input"
+				});
+			});
+		$('input[name="phone"]').keypress(function(e) {
+			if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
+				return false;
+			}
+		});
+		$('input[name="name"]').keypress(function(e) {
+			if (e.which != 46 && e.which > 47 && e.which < 58) {
+				return false;
+			}
+		});
+</script>		
+</body>
+</html>

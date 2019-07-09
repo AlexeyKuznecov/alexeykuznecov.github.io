@@ -1,0 +1,23 @@
+<IfModule mod_expires.c>
+
+	<FilesMatch ".(gif|jpg|jpeg|png|ico|swf|js|css|pdf|woff)$">
+		ExpiresActive On
+		ExpiresDefault "access plus 1 month"
+	</FilesMatch>
+
+	ExpiresDefault ""access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/x-icon" "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType application/x-shockwave-flash "access plus 1 month"
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType application/javascrip t"access plus 1 month"
+	ExpiresByType application/x-javascript "access plus 1 month"
+	ExpiresByType text/html "access plus 1 month"
+	ExpiresByType application/xhtml+xml "access plus 1 month"
+
+</IfModule>
