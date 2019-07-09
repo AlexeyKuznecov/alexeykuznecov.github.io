@@ -8,4 +8,3 @@ if(mail($to, $subject, $message)){
 	header('location: thankyou.html');
 }
 ?>
-

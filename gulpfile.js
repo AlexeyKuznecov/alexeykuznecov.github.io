@@ -19,10 +19,10 @@ gulp.task('scss', function() {
 gulp.task('serve', function() {
 	browserSync.init({
 		server: {
-			baseDir: './public'
+			baseDir: '../AlexeyKuznecov.github.io/'
 		}
 	});
 	gulp.watch('src/scss/**/*.scss', gulp.series('scss'));
-	gulp.watch(['./public/*.html', './public/js/*.js']).on('change', browserSync.reload);
+	gulp.watch(['./**/*.html', './public/js/*.js']).on('change', browserSync.reload);
 });
 gulp.task('default', gulp.series('scss', 'serve'));

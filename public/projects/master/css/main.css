@@ -1365,7 +1365,10 @@ input.form-control:focus {
 }
 @media (max-width: 400px) {
 	.consultation .container {
-		padding-top: 20px;
+		padding-top: 40px;
+	}
+	.consultation {
+		height: 500px;
 	}
 	.consultation h2 {
 		font-size: 24px;
@@ -1390,12 +1393,6 @@ input.form-control:focus {
 @media (max-width: 340px) {
 	.consultation p {
 		font-size: 13px;
-	}
-	.consultation .container {
-		padding-top: 35px;
-	}
-	.consultation {
-		height: 460px;
 	}
 }
 /*----------------- end CONSULTATION -----------------*/

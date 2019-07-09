@@ -1,6 +1,7 @@
 @import "partials/colors.scss";
 @import "partials/fonts.scss";
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -33,6 +34,7 @@ a, a:visited {
 	text-align: center;
 }
 .projects {
+	margin-bottom: 1em;
 	&__col {
 		flex: 0 0 33.3%;
 		padding: 0 15px;
@@ -49,7 +51,7 @@ a, a:visited {
 		justify-content: center;
 	}
 	&__item {
-		transition: box-shadow 0.4s;
+		transition: box-shadow 0.2s;
 		&:hover {
 			box-shadow: 1px 2px 10px #231F20;
 		}
@@ -83,3 +85,4 @@ a, a:visited {
 		margin-bottom: 7px;
 	}
 }
+@import "partials/media.scss";

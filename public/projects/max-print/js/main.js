@@ -2,6 +2,8 @@ $(document).ready(function () {
     var navbarBurger = $('.navbar-burger');
     var navbar = $('.navbar-nav');
     var feedbackLink = $('.products-button, .button');
+
+    
     //Если меню-бургер открыто, то по клику или на якорь-ссылку или на логотип менб закрывается и убирается крестик
     $('.navbar-nav-link, .logo').on('click', function () {
         if (($(window).width() < 676) && ($('.navbar-nav').is(':visible'))) {
@@ -13,18 +15,28 @@ $(document).ready(function () {
     $('[type="tel"]').mask("+7 (999) 999-99-99", { autoclear: false });
     // Добавление затемненности навбару при прокрутке от верха окна
     function scrollNavbar() {
-        $(window).scroll(function () {
-            if ($('.navbar').offset().top !== 0) {
-                $('.navbar, .navbar-nav').addClass('navbar-dark');
+        // $(window).scroll(function () {
+        $(window).bind('scroll', function () {
+            // if ($('.navbar').offset().top !== 0 && $(window).scrollTop() > 1) {
+            if (scrollY > 0) {
+                $('.navbar').addClass('navbar-dark');
+                console.log("offset().top", $('.navbar').offset().top);
+                console.log("scrollY", scrollY);
                 if ($(window).width() < 676) {
                     $('.header__logo-fill').addClass('logo-fill');
                 }
             }
             else {
-                $('.navbar, .navbar-nav').removeClass('navbar-dark');
+                $('.navbar').removeClass('navbar-dark');
                 if ($(window).width() < 676) {
                     $('.header__logo-fill').removeClass('logo-fill');
                 }
+            }
+            if (scrollY > 0 && $(window).width() < 676) {
+                $('.navbar-nav').addClass('navbar-dark');
+            }
+            else {
+                $('.navbar-nav').removeClass('navbar-dark');
             }
         });
     }
@@ -143,11 +155,11 @@ $(document).ready(function () {
     // Добавление Я.Карты при докрутке до секции services
     var services = $('.services');
     var servicesTop = services.offset().top;
-    $(window).bind('scroll', function () {
+    $(document).bind('scroll', function () {
         var windowTop = $(this).scrollTop();
         if (windowTop > servicesTop) {
             $('.map-opacity').prepend('<script type="text/javascript" charset="utf-8" async src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1a1b5729850a1b8ad0b473d469270ce5617aed25c459e451f3f0aa3729ecaa9&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>')
-            $(window).unbind();
+            $(document).unbind();
         }
     });
 });

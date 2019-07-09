@@ -1,0 +1,61 @@
+@mixin md() {
+	@media (max-width: 992px) {
+		@content;
+	}
+}
+@mixin sm() {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin xs() {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+@mixin xxs() {
+	@media (max-width: 400px) {
+		@content;
+	}
+}
+@include md {
+	.projects {
+		&__col {
+			flex: 1 0 50%;
+			margin-bottom: 2em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+@include sm {
+	.projects {
+		&__col {
+			flex: 1 0 100%;
+		}
+	}
+}
+@include xs {
+	.introduce {
+		font-size: 1.5em;		
+	}
+	.projects {
+		&__title {
+			font-size: 1.3em;
+		}
+		&__col {
+			padding: 0;
+		}
+	}
+}
+@include xxs {
+	.introduce {
+		font-size: 1.3em;		
+	}
+	.projects {
+		&__title {
+			font-size: 1.2em;
+		}
+	}
+}

@@ -1,5 +1,64 @@
 @import url('../css/normalize.css');
 @import url('../css/slick.css');
+@font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+        url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    src: url('../fonts/Montserrat-ExtraBold.eot');
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+        url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-display: swap;
+    src: url('../fonts/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -1626,62 +1685,3 @@ label.invalid-input {
     }
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    font-display: swap;
-    src: url('../fonts/OpenSans-Bold.eot');
-    src: local('Open Sans Bold'), local('OpenSans-Bold'),
-        url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/OpenSans-Bold.woff') format('woff'),
-        url('../fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-display: swap;
-    src: url('../fonts/Montserrat-ExtraBold.eot');
-    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
-        url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
-        url('../fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-display: swap;
-    src: url('../fonts/OpenSans-Regular.eot');
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-        url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/OpenSans-Regular.woff') format('woff'),
-        url('../fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-display: swap;
-    src: url('../fonts/OpenSans-SemiBold.eot');
-    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-        url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/OpenSans-SemiBold.woff') format('woff'),
-        url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-display: swap;
-    src: url('../fonts/Roboto-Bold.eot');
-    src: local('Roboto Bold'), local('Roboto-Bold'),
-        url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Bold.woff') format('woff'),
-        url('../fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
