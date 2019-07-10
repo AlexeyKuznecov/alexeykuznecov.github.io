@@ -158,7 +158,7 @@ $(document).ready(function () {
     $(document).bind('scroll', function () {
         var windowTop = $(this).scrollTop();
         if (windowTop > servicesTop) {
-            $('.map-opacity').prepend('<script type="text/javascript" charset="utf-8" async src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1a1b5729850a1b8ad0b473d469270ce5617aed25c459e451f3f0aa3729ecaa9&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>')
+            $('.map-opacity').prepend('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1a1b5729850a1b8ad0b473d469270ce5617aed25c459e451f3f0aa3729ecaa9&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>')
             $(document).unbind();
         }
     });
