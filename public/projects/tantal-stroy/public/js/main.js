@@ -5,8 +5,6 @@ $(function() {
         var navLink = $('.hero-nav nav a');
         $(window).scroll(function name() {
 		var winPos = $(window).scrollTop();//Сколько высота в пикселях от верхушки окна
-        console.log('otstup_menu_ot_top=',menuPos);
-        console.log('visota_ot_top=',winPos);
            if (winPos >= menuPos) {
              menu.addClass('hero-nav-fixed');
          } else {
@@ -67,5 +65,4 @@ $(function() {
         }
         else { $(this).removeClass('invalid-input'); }
     });
-
 });

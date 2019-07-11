@@ -58,14 +58,4 @@
             else { $(this).removeClass('invalid-input'); }
         });
         $('[type="tel"]').mask("+7 (999) 999-99-99", { autoclear: false });
-        $('a.dropdown-link').on('click', function(event) {
-            event.preventDefault();
-            $('ul.submenu').toggleClass('submenu_active');
-            $(this).toggleClass('dropdown-link_active');
-        });
-        $('.submenu__link').click(function() {
-            // event.preventDefault();
-            console.log('Click')
-            $('ul.submenu').removeClass('submenu_active');
-        });
     });
