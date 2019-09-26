@@ -40,6 +40,6 @@ gulp.task('serve', function() {
 	gulp.watch('src/scss/**/*.scss', gulp.series('scss'));
 	gulp.watch(['./**/*.html', './public/js/*.js']).on('change', browserSync.reload);
 });
-gulp.task('default', gulp.series('scss', 'serve'));
+gulp.task('default', gulp.series('scss', 'tinypng', 'serve'));
 
  
