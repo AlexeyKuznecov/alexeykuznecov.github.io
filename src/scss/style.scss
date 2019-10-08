@@ -37,7 +37,8 @@ a, a:visited {
 	margin-bottom: 1em;
 	&__col {
 		// flex: 0 0 33.3%;
-		flex: 0 0 25%;
+		$columns: 3;
+		flex: 0 0 (100%/$columns);
 		padding: 0 15px;
 		margin-bottom: 20px;
 	}

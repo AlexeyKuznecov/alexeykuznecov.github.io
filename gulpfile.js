@@ -1,9 +1,50 @@
-const 	gulp = require('gulp'),
+var	gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		sourcemaps = require('gulp-sourcemaps'),
 		autoprefixer = require('gulp-autoprefixer'),
 		browserSync = require('browser-sync').create(),
-		tinypng = require('gulp-tinypng-compress');
+		newer = require('newer'), // Only work with newer files
+		imagemin = require('imagemin'); // Minify images		
+		// tinypng = require('gulp-tinypng-compress');
+
+// Minify any new images
+// gulp.task('images', function() {
+
+//     // Add the newer pipe to pass through newer images only
+//     return gulp.src('src/img/**/*')
+//     .pipe(newer(imgDest))
+//     .pipe(imagemin([
+//     	imageminGiflossy({
+//     		optimizationLevel: 3,
+//     		optimize: 3,
+//     		lossy: 2
+//     	}),
+//     	imageminPngquant({
+//     		speed: 5,
+//     		quality: [0.6, 0.8]
+//     	}),
+//     	imageminZopfli({
+//     		more: true
+//     	}),
+//     	imageminMozjpeg({
+//     		progressive: true,
+//     		quality: 80
+//     	}),
+//     	imagemin.svgo({
+//     		plugins: [
+//     		{ removeViewBox: false },
+//     		{ removeUnusedNS: false },
+//     		{ removeUselessStrokeAndFill: false },
+//     		{ cleanupIDs: false },
+//     		{ removeComments: true },
+//     		{ removeEmptyAttrs: true },
+//     		{ removeEmptyText: true },
+//     		{ collapseGroups: true }
+//     		]
+//     	})
+//     	]))
+//     .pipe(gulp.dest('dist/img/'));
+//   });
 
 gulp.task('scss', function() {
 	return gulp.src('src/scss/**/*.scss')
@@ -17,19 +58,19 @@ gulp.task('scss', function() {
 	.pipe(gulp.dest('./public/css'))
 	.pipe(browserSync.stream());
 });
-gulp.task('tinypng', function (done) {
-    return gulp.src('src/img/**/*.{png,jpg,jpeg}')
-        .pipe(tinypng({
-            key: 'MnSxThojIQVJ3r59bURj0F6wYKMwfPp7',
-            sigFile: 'src/tiny/.tinypng-sigs',
-            summarize: true,
-            log: true
-        }).on('error', function(err) {
-            console.log(err.message);}))
-        .pipe(gulp.dest('public/img'));
-        done();
-});
-gulp.watch('public/img/**/*.{png,jpg,jpeg}', gulp.series('tinypng'));
+// gulp.task('tinypng', function (done) {
+//     return gulp.src('src/img/**/*.{png,jpg,jpeg}')
+//         .pipe(tinypng({
+//             key: 'MnSxThojIQVJ3r59bURj0F6wYKMwfPp7',
+//             sigFile: 'src/tiny/.tinypng-sigs',
+//             summarize: true,
+//             log: true
+//         }).on('error', function(err) {
+//             console.log(err.message);}))
+//         .pipe(gulp.dest('public/img'));
+//         done();
+// });
+// gulp.watch('public/img/**/*.{png,jpg,jpeg}', gulp.series('tinypng'));
 
 gulp.task('serve', function() {
 	browserSync.init({
@@ -40,6 +81,6 @@ gulp.task('serve', function() {
 	gulp.watch('src/scss/**/*.scss', gulp.series('scss'));
 	gulp.watch(['./**/*.html', './public/js/*.js']).on('change', browserSync.reload);
 });
-gulp.task('default', gulp.series('scss', 'tinypng', 'serve'));
+// gulp.task('default', gulp.series('scss', 'tinypng', 'serve'));
+gulp.task('default', gulp.series('scss', 'serve'));
 
- 
