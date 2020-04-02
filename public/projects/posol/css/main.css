@@ -845,9 +845,7 @@ input:focus {
     outline: none; }
   .slider-arrow {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 40%;
     background-color: transparent;
     border: none;
     margin: 0;
@@ -866,12 +864,12 @@ input:focus {
       transition: all 0.3s; }
     .slider-arrow_left {
       left: 0;
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg); }
+      -webkit-transform: translateY(-50%) rotate(-90deg);
+      transform: translateY(-50%) rotate(-90deg);}
     .slider-arrow_right {
       right: 0;
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg); }
+      -webkit-transform: translateY(-50%) rotate(90deg);
+      transform: translateY(-50%) rotate(90deg);}
     .slider-arrow-left, .slider-arrow-right {
       color: purple;
       font-size: 25px; }
