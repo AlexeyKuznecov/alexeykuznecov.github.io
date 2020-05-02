@@ -10,9 +10,8 @@ var	gulp = require('gulp'),
 // Minify any new images
 // gulp.task('images', function() {
 
-//     // Add the newer pipe to pass through newer images only
 //     return gulp.src('src/img/**/*')
-//     .pipe(newer(imgDest))
+//     .pipe(newer('public/img/'))
 //     .pipe(imagemin([
 //     	imageminGiflossy({
 //     		optimizationLevel: 3,
@@ -29,18 +28,6 @@ var	gulp = require('gulp'),
 //     	imageminMozjpeg({
 //     		progressive: true,
 //     		quality: 80
-//     	}),
-//     	imagemin.svgo({
-//     		plugins: [
-//     		{ removeViewBox: false },
-//     		{ removeUnusedNS: false },
-//     		{ removeUselessStrokeAndFill: false },
-//     		{ cleanupIDs: false },
-//     		{ removeComments: true },
-//     		{ removeEmptyAttrs: true },
-//     		{ removeEmptyText: true },
-//     		{ collapseGroups: true }
-//     		]
 //     	})
 //     	]))
 //     .pipe(gulp.dest('dist/img/'));
